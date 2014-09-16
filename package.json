@@ -1,0 +1,23 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.1",
+  "description": "Theme for website",
+  "author": "Aaron Rosenbaum <aaron.rosenbaum@gmail.com>",
+  "private": true,
+  "devDependencies": {
+    "gulp": "3.8.7",
+    "gulp-ruby-sass": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "gulp-concat": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",
+    "gulp-imagemin": "*",
+    "gulp-htmlmin": "*",
+    "gulp-cache": "*",
+    "gulp-livereload": "*",
+    "gulp-notify": "*",
+    "del": "*",
+    "connect": "*"
+  }
+}
