@@ -8,8 +8,19 @@ section.home>a{
 	font-size:2.5em;
 	font-weight:bold;
 	letter-spacing:-.075em;
+	backface-visibility: hidden;
 	color:#fff;
-	transition:.1s all ease-in-out;
+	
+	transition:background .1s ease-in-out,
+		width .1s ease-in-out,
+		border .1s ease-in-out,
+		margin .1s ease-in-out,
+		box-shadow .1s ease-in-out,
+		text-shadow .1s ease-in-out,
+		transform .3s ease-in-out;
+	@media screen and (max-width:640px){
+		transition:.1s all ease-in-out;
+	}
 	
 	&:nth-child(1){
 		background-color:$about;
@@ -40,7 +51,6 @@ section.home>a{
 	&:hover{
 		box-shadow:none;
 		&:nth-child(odd){
-			width:80vw;
 			margin-left:20vw;
 		}
 		&:nth-child(even){
@@ -124,10 +134,12 @@ body>section.home.transition{
 		}
 	}
 	a:nth-child(odd){
-		margin-left:100vw;
+//		margin-left:100vw;
+		transform:translate3d(100vw,0,0);
 	}
 	a:nth-child(even){
-		margin-left:-100vw;
+//		margin-left:-100vw;
+		transform:translate3d(-100vw,0,0);
 	}
 }
 

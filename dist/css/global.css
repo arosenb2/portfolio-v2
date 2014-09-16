@@ -188,7 +188,7 @@ body > section {
   overflow-x: hidden;
   width: 100vw;
   padding: 120px 0 10px;
-  min-height: 410px;
+  min-height: 412px;
 }
 @media screen and (max-width: 640px) {
   body > section {
@@ -348,9 +348,17 @@ section.home > a {
   font-size: 2.5em;
   font-weight: bold;
   letter-spacing: -.075em;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   color: #fff;
-  -webkit-transition: .1s all ease-in-out;
-          transition: .1s all ease-in-out;
+  -webkit-transition: background .1s ease-in-out, width .1s ease-in-out, border .1s ease-in-out, margin .1s ease-in-out, box-shadow .1s ease-in-out, text-shadow .1s ease-in-out, -webkit-transform .3s ease-in-out;
+          transition: background .1s ease-in-out, width .1s ease-in-out, border .1s ease-in-out, margin .1s ease-in-out, box-shadow .1s ease-in-out, text-shadow .1s ease-in-out, transform .3s ease-in-out;
+}
+@media screen and (max-width: 640px) {
+  section.home > a {
+    -webkit-transition: .1s all ease-in-out;
+            transition: .1s all ease-in-out;
+  }
 }
 section.home > a:nth-child(1) {
   background-color: #55ccff;
@@ -383,7 +391,6 @@ section.home > a:hover {
   text-shadow: 0 0 2px #000;
 }
 section.home > a:hover:nth-child(odd) {
-  width: 80vw;
   margin-left: 20vw;
 }
 section.home > a:hover:nth-child(even) {
@@ -471,10 +478,12 @@ body > section.home.transition[data-page="contact"] a:nth-child(4) {
           transition-delay: 0;
 }
 body > section.home.transition a:nth-child(odd) {
-  margin-left: 100vw;
+  -webkit-transform: translate3d(100vw, 0, 0);
+          transform: translate3d(100vw, 0, 0);
 }
 body > section.home.transition a:nth-child(even) {
-  margin-left: -100vw;
+  -webkit-transform: translate3d(-100vw, 0, 0);
+          transform: translate3d(-100vw, 0, 0);
 }
 
 footer {

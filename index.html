@@ -90,13 +90,14 @@
 $(document).ready(function(){
 	$("body>section.home").on("click","a",function(e){
 		e.preventDefault();
+		var time = $(window).width() > 640 ? 700 : 500;
 		var page = $(this).data("page");
 		$(".home").attr("data-page",page).addClass("transition");
 		setTimeout(function(){
 			$("body").attr("data-active",page);
 			$(".home").addClass("hidden");
 			$("."+page).removeClass("hidden");
-		},500);
+		},time);
 	});
 	$(".back").on("click",function(e){
 		e.preventDefault();
