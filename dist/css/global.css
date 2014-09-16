@@ -199,7 +199,7 @@ body > section {
 
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url("HN-Bold.woff") format("woff"), url("HN-Bold.ttf") format("truetype");
+  src: local("HelveticaNeue"), local(HelveticaNeue), url("HN-Bold.woff") format("woff"), url("HN-Bold.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 body {
