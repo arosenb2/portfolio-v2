@@ -19,7 +19,13 @@ section.home>a{
 		text-shadow .1s ease-in-out,
 		transform .3s ease-in-out;
 	@media screen and (max-width:640px){
-		transition:.1s all ease-in-out;
+		transition:background .1s ease-in-out,
+			width .1s ease-in-out,
+			border .1s ease-in-out,
+			margin .1s ease-in-out,
+			box-shadow .1s ease-in-out,
+			text-shadow .1s ease-in-out,
+			transform .2s ease-in-out;
 	}
 	
 	&:nth-child(1){
