@@ -349,6 +349,32 @@ a {
   color: transparent;
   text-shadow: none !important;
 }
+.loading section.home > a:hover {
+  width: 85vw !important;
+}
+.loading section.home > a:hover:nth-child(1) {
+  background-color: #55ccff;
+  border-bottom: 10px solid #00a7ee;
+}
+.loading section.home > a:hover:nth-child(2) {
+  background-color: #33ffdd;
+  border-bottom: 10px solid #00ccaa;
+}
+.loading section.home > a:hover:nth-child(3) {
+  background-color: #ff9e9e;
+  border-bottom: 10px solid #ff3838;
+}
+.loading section.home > a:hover:nth-child(4) {
+  background-color: #ffe55a;
+  border-bottom: 10px solid #f3cd00;
+}
+.loading section.home > a:hover:nth-child(odd) {
+  margin-left: 15vw;
+  box-shadow: 20px 10px 15px 0px #777;
+}
+.loading section.home > a:hover:nth-child(even) {
+  box-shadow: -20px 10px 15px 0px #777;
+}
 
 .loaded header span, .loaded footer, .loaded section.home > a {
   -webkit-transition: all .4s ease-in;

@@ -5,6 +5,32 @@
 	section.home>a{
 		color:transparent;
 		text-shadow:none !important;
+		&:hover{
+			width:85vw !important;
+			&:nth-child(1){
+				background-color:$about;
+				border-bottom:10px solid darken($about,20%);
+			}
+			&:nth-child(2){
+				background-color:$specialties;
+				border-bottom:10px solid darken($specialties,20%);
+			}
+			&:nth-child(3){
+				background-color:$portfolio;
+				border-bottom:10px solid darken($portfolio,20%);
+			}
+			&:nth-child(4){
+				background-color:$contact;
+				border-bottom:10px solid darken($contact,20%);
+			}
+			&:nth-child(odd){
+				margin-left:15vw;
+				box-shadow:20px 10px 15px 0px #777;
+			}
+			&:nth-child(even){
+				box-shadow:-20px 10px 15px 0px #777;
+			}
+		}
 	}
 }
 .loaded{
