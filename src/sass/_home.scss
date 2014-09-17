@@ -1,3 +1,32 @@
+.loading{
+	header,footer{
+		opacity:0;
+	}
+	section.home>a{
+		color:transparent;
+		text-shadow:none !important;
+	}
+}
+.loaded{
+	header,footer,section.home>a{
+		transition:all .4s ease-in;
+	}
+	footer{
+		transition-delay:.4s;
+	}
+	section.home>a:nth-child(1){
+		transition-delay:.8s;
+	}
+	section.home>a:nth-child(2){
+		transition-delay:1.2s;
+	}
+	section.home>a:nth-child(3){
+		transition-delay:1.6s;
+	}
+	section.home>a:nth-child(4){
+		transition-delay:2s;
+	}
+}
 section.home>a{
 	display:block;
 	z-index:2;

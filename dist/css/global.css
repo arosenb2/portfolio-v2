@@ -341,6 +341,39 @@ a {
   opacity: 1;
 }
 
+.loading header, .loading footer {
+  opacity: 0;
+}
+.loading section.home > a {
+  color: transparent;
+  text-shadow: none !important;
+}
+
+.loaded header, .loaded footer, .loaded section.home > a {
+  -webkit-transition: all .4s ease-in;
+          transition: all .4s ease-in;
+}
+.loaded footer {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+.loaded section.home > a:nth-child(1) {
+  -webkit-transition-delay: .8s;
+          transition-delay: .8s;
+}
+.loaded section.home > a:nth-child(2) {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+.loaded section.home > a:nth-child(3) {
+  -webkit-transition-delay: 1.6s;
+          transition-delay: 1.6s;
+}
+.loaded section.home > a:nth-child(4) {
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
 section.home > a {
   display: block;
   z-index: 2;

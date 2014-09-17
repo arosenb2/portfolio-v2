@@ -21,7 +21,7 @@
 	
 	
 </head>
-<body data-active="home">
+<body data-active="home" class="loading">
 	<!-- svg defs -->
 	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
     <defs>
@@ -102,6 +102,13 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+	setTimeout(function(){
+		$(".loading").removeClass("loading").addClass("loaded");
+		setTimeout(function(){
+			$(".loaded").removeClass("loaded");
+		},2400);
+	},1000);
+	
 	$("body>section.home").on("click","a",function(e){
 		e.preventDefault();
 		var time = $(window).width() > 640 ? 700 : 500;
