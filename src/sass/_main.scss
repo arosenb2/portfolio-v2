@@ -1,9 +1,10 @@
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: local('HelveticaNeue'), local(HelveticaNeue), /* Local first */
-	   url('HN-Bold.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-       url('HN-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  	font-family: 'HelveticaNeue';
+	src: local('HelveticaNeue'), local('Helvetica Neue'),
+	   url('HelveticaNeueBold.woff') format('woff');
+	font-weight:bold;
 }
+
 html {
 	-webkit-text-size-adjust: 100%;
 }
