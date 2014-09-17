@@ -342,7 +342,7 @@ a {
   opacity: 1;
 }
 
-.loading header, .loading footer {
+.loading header span, .loading footer {
   opacity: 0;
 }
 .loading section.home > a {
@@ -350,7 +350,7 @@ a {
   text-shadow: none !important;
 }
 
-.loaded header, .loaded footer, .loaded section.home > a {
+.loaded header span, .loaded footer, .loaded section.home > a {
   -webkit-transition: all .4s ease-in;
           transition: all .4s ease-in;
 }

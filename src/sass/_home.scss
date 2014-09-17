@@ -1,5 +1,5 @@
 .loading{
-	header,footer{
+	header span,footer{
 		opacity:0;
 	}
 	section.home>a{
@@ -8,7 +8,7 @@
 	}
 }
 .loaded{
-	header,footer,section.home>a{
+	header span,footer,section.home>a{
 		transition:all .4s ease-in;
 	}
 	footer{
