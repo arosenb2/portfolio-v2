@@ -1,80 +1,80 @@
 .loading{
-	header span,footer{
-		opacity:0;
+	header span, footer{
+		opacity: 0;
 	}
-	section.home>a{
-		color:transparent;
-		text-shadow:none !important;
+	section.home > a{
+		color: transparent;
+		text-shadow: none !important;
 		&:hover{
-			width:85vw !important;
+			width: 85vw !important;
 			&:nth-child(1){
-				background-color:$about;
-				border-bottom:10px solid darken($about,20%);
+				background-color: $about;
+				border-bottom: 10px solid darken($about,20%);
 			}
 			&:nth-child(2){
-				background-color:$specialties;
-				border-bottom:10px solid darken($specialties,20%);
+				background-color: $specialties;
+				border-bottom: 10px solid darken($specialties,20%);
 			}
 			&:nth-child(3){
-				background-color:$portfolio;
-				border-bottom:10px solid darken($portfolio,20%);
+				background-color: $portfolio;
+				border-bottom: 10px solid darken($portfolio,20%);
 			}
 			&:nth-child(4){
-				background-color:$contact;
-				border-bottom:10px solid darken($contact,20%);
+				background-color: $contact;
+				border-bottom: 10px solid darken($contact,20%);
 			}
 			&:nth-child(odd){
-				margin-left:15vw;
-				box-shadow:20px 10px 15px 0px #777;
+				margin-left: 15vw;
+				box-shadow: 20px 10px 15px 0px #777;
 			}
 			&:nth-child(even){
-				box-shadow:-20px 10px 15px 0px #777;
+				box-shadow: -20px 10px 15px 0px #777;
 			}
 		}
 	}
 }
 .loaded{
-	header span,footer,section.home>a{
-		transition:all .4s ease-in;
+	header span, footer, section.home > a {
+		transition: all .4s ease-in;
 	}
 	footer{
-		transition-delay:.4s;
+		transition-delay: .4s;
 	}
-	section.home>a:nth-child(1){
-		transition-delay:.8s;
+	section.home > a:nth-child(1){
+		transition-delay: .8s;
 	}
-	section.home>a:nth-child(2){
-		transition-delay:1.2s;
+	section.home > a:nth-child(2){
+		transition-delay: 1.2s;
 	}
-	section.home>a:nth-child(3){
-		transition-delay:1.6s;
+	section.home > a:nth-child(3){
+		transition-delay: 1.6s;
 	}
-	section.home>a:nth-child(4){
-		transition-delay:2s;
+	section.home > a:nth-child(4){
+		transition-delay: 2s;
 	}
 }
-section.home>a{
-	display:block;
-	z-index:2;
-	width:85vw;
-	padding:15px;
-	margin-bottom:15px;
-	text-decoration:none;
-	font-size:2.5em;
-	font-weight:bold;
-	letter-spacing:-.075em;
+section.home > a{
+	display: block;
+	z-index: 2;
+	width: 85vw;
+	padding: 15px;
+	margin-bottom: 15px;
+	text-decoration: none;
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: -.075em;
 	backface-visibility: hidden;
-	color:#fff;
+	color: #fff;
 	
-	transition:background .1s ease-in-out,
+	transition: background .1s ease-in-out,
 		width .1s ease-in-out,
 		border .1s ease-in-out,
 		margin .1s ease-in-out,
 		box-shadow .1s ease-in-out,
 		text-shadow .1s ease-in-out,
 		transform .3s ease-in-out;
-	@media screen and (max-width:640px){
-		transition:background .1s ease-in-out,
+	@media screen and (max-width: 640px){
+		transition: background .1s ease-in-out,
 			width .1s ease-in-out,
 			border .1s ease-in-out,
 			margin .1s ease-in-out,
@@ -84,170 +84,168 @@ section.home>a{
 	}
 	
 	&:nth-child(1){
-		background-color:$about;
-		border-bottom:10px solid darken($about,20%);
+		background-color: $about;
+		border-bottom: 10px solid darken($about, 20%);
 	}
 	&:nth-child(2){
-		background-color:$specialties;
-		border-bottom:10px solid darken($specialties,20%);
+		background-color: $specialties;
+		border-bottom: 10px solid darken($specialties, 20%);
 	}
 	&:nth-child(3){
-		background-color:$portfolio;
-		border-bottom:10px solid darken($portfolio,20%);
+		background-color: $portfolio;
+		border-bottom: 10px solid darken($portfolio, 20%);
 	}
 	&:nth-child(4){
-		background-color:$contact;
-		border-bottom:10px solid darken($contact,20%);
+		background-color: $contact;
+		border-bottom: 10px solid darken($contact, 20%);
 	}
 	&:nth-child(odd){
-		margin-left:15vw;
-		text-shadow:0 0 1px #000;
-		box-shadow:14px 6px 1px 0px #777;
+		margin-left: 15vw;
+		text-shadow: 0 0 1px #000;
+		box-shadow: 14px 6px 1px 0px #777;
 	}
 	&:nth-child(even){
-		text-align:right;
-		text-shadow:0 0 1px #000;
-		box-shadow:-14px 6px 1px 0px #777;
+		text-align: right;
+		text-shadow: 0 0 1px #000;
+		box-shadow: -14px 6px 1px 0px #777;
 	}
 	&:hover{
-		box-shadow:none;
+		box-shadow: none;
 		&:nth-child(odd){
-			margin-left:20vw;
+			margin-left: 20vw;
 		}
 		&:nth-child(even){
-			width:80vw;
+			width: 80vw;
 		}
 		&:nth-child(1){
-			background-color:darken($about,20%);
-			border-bottom:10px solid darken($about,40%);
+			background-color: darken($about, 20%);
+			border-bottom: 10px solid darken($about, 40%);
 		}
 		&:nth-child(2){
-			background-color:darken($specialties,20%);
-			border-bottom:10px solid darken($specialties,40%);
+			background-color: darken($specialties, 20%);
+			border-bottom: 10px solid darken($specialties, 40%);
 		}
 		&:nth-child(3){
-			background-color:darken($portfolio,20%);
-			border-bottom:10px solid darken($portfolio,40%);
+			background-color: darken($portfolio, 20%);
+			border-bottom: 10px solid darken($portfolio, 40%);
 		}
 		&:nth-child(4){
-			background-color:darken($contact,20%);
-			border-bottom:10px solid darken($contact,40%);
+			background-color: darken($contact,20%);
+			border-bottom: 10px solid darken($contact, 40%);
 		}
-		text-shadow:0 0 2px #000;
+		text-shadow: 0 0 2px #000;
 	}
 }
 
 body>section.home.transition{
 	&[data-page="about"]{
 		a:nth-child(1){
-			transition-delay:0;
+			transition-delay: 0;
 		}
 		a:nth-child(2){
-			transition-delay:.3s;
+			transition-delay: .3s;
 		}
 		a:nth-child(3){
-			transition-delay:.1s;
+			transition-delay: .1s;
 		}
 		a:nth-child(4){
-			transition-delay:.2s;
+			transition-delay: .2s;
 		}
 	}
 	&[data-page="specialties"]{
 		a:nth-child(1){
-			transition-delay:.1s;
+			transition-delay: .1s;
 		}
 		a:nth-child(2){
-			transition-delay:0s;
+			transition-delay: 0s;
 		}
 		a:nth-child(3){
-			transition-delay:.2s;
+			transition-delay: .2s;
 		}
 		a:nth-child(4){
-			transition-delay:.3s;
+			transition-delay: .3s;
 		}
 	}
 	&[data-page="portfolio"]{
 		a:nth-child(1){
-			transition-delay:.2s;
+			transition-delay: .2s;
 		}
 		a:nth-child(2){
-			transition-delay:.3s;
+			transition-delay: .3s;
 		}
 		a:nth-child(3){
-			transition-delay:0;
+			transition-delay: 0;
 		}
 		a:nth-child(4){
-			transition-delay:.1s;
+			transition-delay: .1s;
 		}
 	}
 	&[data-page="contact"]{
 		a:nth-child(1){
-			transition-delay:.3s;
+			transition-delay: .3s;
 		}
 		a:nth-child(2){
-			transition-delay:.1s;
+			transition-delay: .1s;
 		}
 		a:nth-child(3){
-			transition-delay:.2s;
+			transition-delay: .2s;
 		}
 		a:nth-child(4){
-			transition-delay:0;
+			transition-delay: 0;
 		}
 	}
 	a:nth-child(odd){
-//		margin-left:100vw;
-		transform:translate3d(100vw,0,0);
+		transform: translate3d(100vw, 0, 0);
 	}
 	a:nth-child(even){
-//		margin-left:-100vw;
-		transform:translate3d(-100vw,0,0);
+		transform: translate3d(-100vw, 0, 0);
 	}
 }
 
 footer {
-	text-align:center;
+	text-align: center;
 	p {
-		color:#fff;
-		letter-spacing:-.06em;
-		font-weight:bold;
-		text-shadow:0 0 1px #333,0 1px 1px #000;		
+		color: #fff;
+		letter-spacing: -.06em;
+		font-weight: bold;
+		text-shadow: 0 0 1px #333, 0 1px 1px #000;
 	}
 	a{
 		text-decoration: none;
 		.icon{
-			transition:.75s all ease-in-out;
+			transition: .75s all ease-in-out;
 		}
 		&:hover{
 			.icon{
-				transition-duration:.15s;
+				transition-duration: .15s;
 			}
 			.icon-facebook{
-				fill:#3b5998;
+				fill: #3b5998;
 			}
 			.icon-twitter{
-				fill:#55acee;
+				fill: #55acee;
 			}
 			.icon-linkedin{
-				fill:#007bb6;
+				fill: #007bb6;
 			}
 			.icon-googleplus{
-				fill:#dd4b39;
+				fill: #dd4b39;
 			}
 			.icon-github{
-				fill:#4183c4;
+				fill: #4183c4;
 			}
 			.icon-codepen{
-				fill:#fff;
+				fill: #fff;
 			}
 			.icon-email{
-				fill:#eee;
+				fill: #eee;
 			}
 		}
 	}
 	.icon {
-		width:40px;
-		margin:0;
-		padding:0;
+		width: 40px;
+		margin: 0;
+		padding: 0;
 	}
 	.icon-email{
 		position: relative;
