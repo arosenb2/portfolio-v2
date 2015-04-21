@@ -101,13 +101,13 @@ section.home>a{
 	}
 	&:nth-child(odd){
 		margin-left:15vw;
-		text-shadow:0 0 2px #000, 5px 4px 1px #777;
-		box-shadow:20px 10px 15px 0px #777;
+		text-shadow:0 0 1px #000;
+		box-shadow:14px 6px 1px 0px #777;
 	}
 	&:nth-child(even){
 		text-align:right;
-		text-shadow:0 0 2px #000, -5px 4px 1px #777;
-		box-shadow:-20px 10px 15px 0px #777;
+		text-shadow:0 0 1px #000;
+		box-shadow:-14px 6px 1px 0px #777;
 	}
 	&:hover{
 		box-shadow:none;
