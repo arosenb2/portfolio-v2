@@ -216,32 +216,32 @@ body {
   z-index: 0;
 }
 body[data-active='home'] {
-  background-image: -webkit-linear-gradient(white, #999999);
-  background-image: linear-gradient(white, #999999);
+  background-image: -webkit-linear-gradient(#fff, #999);
+  background-image: linear-gradient(#fff, #999);
 }
 body[data-active='about'] {
-  background-image: -webkit-linear-gradient(white, #55ccff);
-  background-image: linear-gradient(white, #55ccff);
+  background-image: -webkit-linear-gradient(#fff, #5cf);
+  background-image: linear-gradient(#fff, #5cf);
 }
 body[data-active='about'] .back {
-  color: #55ccff;
+  color: #5cf;
 }
 body[data-active='about'] .back:hover {
   color: #00a7ee;
 }
 body[data-active='specialties'] {
-  background-image: -webkit-linear-gradient(white, #33ffdd);
-  background-image: linear-gradient(white, #33ffdd);
+  background-image: -webkit-linear-gradient(#fff, #3fd);
+  background-image: linear-gradient(#fff, #3fd);
 }
 body[data-active='specialties'] .back {
-  color: #33ffdd;
+  color: #3fd;
 }
 body[data-active='specialties'] .back:hover {
   color: #00ccaa;
 }
 body[data-active='portfolio'] {
-  background-image: -webkit-linear-gradient(white, #ff9e9e);
-  background-image: linear-gradient(white, #ff9e9e);
+  background-image: -webkit-linear-gradient(#fff, #ff9e9e);
+  background-image: linear-gradient(#fff, #ff9e9e);
 }
 body[data-active='portfolio'] .back {
   color: #ff9e9e;
@@ -250,8 +250,8 @@ body[data-active='portfolio'] .back:hover {
   color: #ff3838;
 }
 body[data-active='contact'] {
-  background-image: -webkit-linear-gradient(white, #ffe55a);
-  background-image: linear-gradient(white, #ffe55a);
+  background-image: -webkit-linear-gradient(#fff, #ffe55a);
+  background-image: linear-gradient(#fff, #ffe55a);
 }
 body[data-active='contact'] .back {
   color: #ffe55a;
@@ -353,11 +353,11 @@ a {
   width: 85vw !important;
 }
 .loading section.home > a:hover:nth-child(1) {
-  background-color: #55ccff;
+  background-color: #5cf;
   border-bottom: 10px solid #00a7ee;
 }
 .loading section.home > a:hover:nth-child(2) {
-  background-color: #33ffdd;
+  background-color: #3fd;
   border-bottom: 10px solid #00ccaa;
 }
 .loading section.home > a:hover:nth-child(3) {
@@ -424,11 +424,11 @@ section.home > a {
   }
 }
 section.home > a:nth-child(1) {
-  background-color: #55ccff;
+  background-color: #5cf;
   border-bottom: 10px solid #00a7ee;
 }
 section.home > a:nth-child(2) {
-  background-color: #33ffdd;
+  background-color: #3fd;
   border-bottom: 10px solid #00ccaa;
 }
 section.home > a:nth-child(3) {
@@ -441,13 +441,13 @@ section.home > a:nth-child(4) {
 }
 section.home > a:nth-child(odd) {
   margin-left: 15vw;
-  text-shadow: 0 0 2px #000, 5px 4px 1px #777;
-  box-shadow: 20px 10px 15px 0px #777;
+  text-shadow: 0 0 1px #000;
+  box-shadow: 14px 6px 1px 0px #777;
 }
 section.home > a:nth-child(even) {
   text-align: right;
-  text-shadow: 0 0 2px #000, -5px 4px 1px #777;
-  box-shadow: -20px 10px 15px 0px #777;
+  text-shadow: 0 0 1px #000;
+  box-shadow: -14px 6px 1px 0px #777;
 }
 section.home > a:hover {
   box-shadow: none;
@@ -556,7 +556,7 @@ footer p {
   color: #fff;
   letter-spacing: -.06em;
   font-weight: bold;
-  text-shadow: 0 0 1px #333,0 1px 1px #000;
+  text-shadow: 0 0 1px #333, 0 1px 1px #000;
 }
 footer a {
   text-decoration: none;
