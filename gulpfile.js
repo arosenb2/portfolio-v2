@@ -60,9 +60,8 @@ gulp.task('livereload',function(){
 })
 
 gulp.task('css', function() {
-  return gulp.src('src/sass/global.scss')
+  return sass('src/sass/global.scss', { style: 'expanded'})
     .pipe(plumber())
-    .pipe(sass({ style: 'expanded' }))
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('dist/css'))
     .pipe(rename({suffix: '.min'}))
